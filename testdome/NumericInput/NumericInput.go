@@ -1,9 +1,7 @@
 
 
 package main
-
 import "fmt"
-
 
 type UserInput interface {
    Add(rune)
@@ -17,12 +15,7 @@ type NumericInput struct {
 func main() {
     original := "10a"
     
-
-    
-    r := []rune(original[:2])
-    
-    
-    
+	r := []rune(original[:2])//séparation des 2 premiers éléments
     
     result := string(r)
     fmt.Println(result)
